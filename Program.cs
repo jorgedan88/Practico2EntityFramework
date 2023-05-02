@@ -1,9 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Clase6.Data;
+using Practico2HDP.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<MenuContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("MenuContext") ?? throw new InvalidOperationException("Connection string 'MenuContext' not found.")));
+builder.Services.AddDbContext<BiciContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("BiciContext") ?? throw new InvalidOperationException("Connection string 'BiciContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
