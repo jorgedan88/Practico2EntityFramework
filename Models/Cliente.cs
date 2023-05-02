@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Practico2HDP.Models
+namespace Tp2Ef.Models
 {
     public class Cliente
     {

@@ -1,10 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Practico2HDP.Models
+using System.ComponentModel.DataAnnotations;
+namespace Tp2Ef.Models
 {
     public class Concesionario
     {
-        public int ConcesionarioID { get; set; }
+                public int ConcesionarioID { get; set; }
 
         [Display(Name = "Nombre comercial")]
         public string NombreComercial { get; set; }
@@ -12,7 +11,5 @@ namespace Practico2HDP.Models
         [Display(Name = "Dirección")]
         public string Direccion { get; set; }
         public string Tel { get; set; }
-
-        // Relaciones
     }
 }
